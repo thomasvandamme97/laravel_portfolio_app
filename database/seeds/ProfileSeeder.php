@@ -26,7 +26,7 @@ class ProfileSeeder extends Seeder
             'address' => 'Oostende, België',
             'linkedin' => 'www.linkedin.com/in/thomas-vandamme-80329619b/',
             'github' => 'www.github.com/thomasvandamme97',
-            'description' => 'I am a Junior PHP Developer that is able to build web applications from the ground up. I have no preference regarding size of a project as both peak my interest. I aspire to learn as much as possible as it is way more fun and rewarding to learn how to do something instead of immitating someone else their work.',
+            'description' => 'Gepassioneerde programmeur met interesse in het ontwikkelen, onderhouden en uitbreiden van kleine en grote projecten. Een oog voor precisie en kwaliteit tijdens het ontwikkelen van applicaties. Samen kennis bundelen met anderen brengt wonderen met zich mee.',
         ]);
     }
 }

@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $project->title }}</h5>
                         <p class="card-text">{{ $project->description }}</p>
-                        <a href="https://{{ $project->link }}" class="btn btn-primary">{{ $project->link }}</a>
+                        <a href="https://{{ $project->link }}" class="btn btn-primary">{{ $project->title }}</a>
                     </div>
                     <div class="d-flex justify-content-end">
                         <a class="btn btn-warning" href="{{ route('projects.edit', $project->id) }}">

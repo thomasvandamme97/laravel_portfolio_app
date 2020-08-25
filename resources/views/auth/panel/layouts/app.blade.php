@@ -22,7 +22,7 @@
 <body class="d-flex vw-100 vh-100">
     <nav class="vh-100 bg-dark p-2">
         <div class="text-center nav-item">
-            <a class="nav-link" href="{{ route('home') }}">Exit</a>
+            <a class="nav-link" href="{{ route('home') }}">portfolio</a>
         </div>
         <hr class="bg-light">
         <ul class="nav flex-column">

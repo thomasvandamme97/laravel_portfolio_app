@@ -75,14 +75,21 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        Storage::delete('projects/' . $project->image);
+        // If there is a file uploaded
+        if ($request->file) {
+            // Delete the existing one
+            Storage::delete('projects/' . $project->image);
+
+            // Update existing file name to new file name
+            $project->image = $request->file->getClientOriginalName();
+
+            // Store the uploaded file into storage
+            $request->file->storeAs('projects', $request->file->getClientOriginalName());
+        }
 
         $project->title = $request->title;
         $project->description = $request->description;
         $project->link = $request->link;
-        $project->image = $request->file->getClientOriginalName();
-
-        $request->file->storeAs('projects', $request->file->getClientOriginalName());
 
         $project->save();
 

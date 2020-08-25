@@ -15,17 +15,17 @@ class ProjectSeeder extends Seeder
         Project::truncate();
 
         Project::create([
-            'title' => 'DroneZone',
-            'description' => 'Bootstrap exercise based on a template.',
-            'link' => 'www.dronezone.be',
-            'image' => 'dronezone.png',
+            'title' => 'Portfolio',
+            'description' => 'Portfolio applicatie gebouwd met Laravel. Deze applicatie bevat een eigen CMS met de benodigde CRUD operaties.',
+            'link' => 'github.com/thomasvandamme97/laravel_portfolio_app',
+            'image' => 'portfolio.png',
         ]);
 
         Project::create([
             'title' => 'BlogOOP',
-            'description' => 'Object Oriented PHP exercise with self built CMS.',
-            'link' => 'www.blogoop.be',
-            'image' => 'blog.png',
+            'description' => 'Webshop applicatie gebouwd met Laravel. Het project bevat producten, een winkelmandje, betaling met VISA, bestellingen en gebruiker authenticatie.',
+            'link' => 'github.com/thomasvandamme97/laravel_webshop_app',
+            'image' => 'webshop.png',
         ]);
     }
 }

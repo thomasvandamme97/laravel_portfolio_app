@@ -6,7 +6,7 @@
         @csrf
         @method('PUT')
         <div class="row form-group">
-            <img class="col-6" src="/storage/projects/{{ $project->image }}" alt="">
+            <img class="col-md-4" src="/storage/projects/{{ $project->image }}" alt="">
         </div>
         <div class="form-group">
             <label for="title">Title</label>
